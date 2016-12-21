@@ -5,7 +5,7 @@ import matplotlib.dates as mdates
 import numpy as np
 
 
-date, bid, ask = np.loadtxt('GBPUSD1m.txt', unpack=True, delimiter=',', converters={0:mdates.bytespdate2num('%Y%m%d%H%M%S')})
+date, bid, ask = np.loadtxt('GBPUSD1d.txt', unpack=True, delimiter=',', converters={0:mdates.bytespdate2num('%Y%m%d%H%M%S')})
 
 fig = plt.figure(figsize=(10, 7))
 ax1 = plt.subplot2grid((40, 40), (0, 0), rowspan=40, colspan=40)
