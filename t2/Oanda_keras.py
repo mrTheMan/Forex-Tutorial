@@ -57,6 +57,7 @@ test_Y = testY_df.as_matrix()
 
 import tflearn
 
+'''
 
 
 net = tflearn.input_data(shape=[None, 4, 3000])
@@ -66,4 +67,7 @@ net = tflearn.fully_connected(net, 1, activation='tanh')
 net = tflearn.regression(net, optimizer='adam', loss='categorical_crossentropy', name="output1")
 
 model = tflearn.DNN(net, tensorboard_verbose=2)
-model.fit(inputX, inputY, n_epoch=1, validation_set=0.1, show_metric=True,snapshot_step=100)
+model.fit(inputX, inputY, n_epoch=1, validation_set=0.1, show_metric=False,snapshot_step=100)
+
+'''
+
