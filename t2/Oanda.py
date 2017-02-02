@@ -59,7 +59,7 @@ import tflearn
 
 
 
-net = tflearn.input_data(shape=[None, 4, 3000])
+net = tflearn.input_data(shape=[4, 3000])
 net = tflearn.lstm(net, 128)
 net = tflearn.lstm(net, 128)
 net = tflearn.fully_connected(net, 1, activation='tanh')
